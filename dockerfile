@@ -7,6 +7,6 @@ WORKDIR /home/app/
 RUN git clone https://github.com/VladimirNikel/SP_laba4.git \
 	&& cd SP_laba4/ \
 	&& g++ first_programm.cpp -o first \
-	&& g++ second_programm.cpp -o second -lstdc++fs
+	&& g++ second_programm.cpp -o second -lstdc++fs -pthread
 
 WORKDIR /home/app/SP_laba4/
